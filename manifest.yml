@@ -1,10 +1,11 @@
+declared-services:
+ NodeRedDeploy-cloudantNoSQLDB:
+    label: cloudantNoSQLDB
+    plan: Lite
 applications:
 - path: .
   memory: 512M
   instances: 1
-  domain: mybluemix.net
-  name: NodeRedDeploy
-  host: benedikt
   disk_quota: 1024M
   services:
   - NodeRedDeploy-cloudantNoSQLDB
